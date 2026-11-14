@@ -1,0 +1,22 @@
+:root {
+  color-scheme: light;
+  --sage: #edf2e8;
+  --sage-deep: #526b55;
+  --ink: #26372b;
+  --muted: #647267;
+  --gold: #b69a61;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; min-height: 100vh; display: grid; place-items: center;
+  padding: 24px; background: radial-gradient(circle at top, #fbfcf7, var(--sage));
+  color: var(--ink); font-family: Georgia, "Noto Serif", serif;
+}
+.welcome { width: min(100%, 620px); text-align: center; padding: 48px 24px; }
+.bismillah, .verse { color: var(--sage-deep); line-height: 1.9; }
+.bismillah { font-size: 1.35rem; }
+h1 { margin: 22px 0 8px; font-size: clamp(2rem, 8vw, 3.2rem); font-weight: 500; }
+.subtitle, .reference, .status { color: var(--muted); font-family: system-ui, sans-serif; }
+.verse { margin: 36px 0 8px; font-size: clamp(1.45rem, 6vw, 2.1rem); }
+.reference { font-size: .9rem; }
+.status { margin-top: 42px; font-size: .85rem; }
